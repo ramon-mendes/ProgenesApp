@@ -1,0 +1,45 @@
+{
+    "$jason": {
+        "head": {
+            "title": "Web Container Native Transition",
+            "actions": {
+                "$load": {
+                    "type": "$set",
+                    "options": {
+                        "url": [
+                            {
+                                "{{#if $params && 'url' in $params}}": "{{$params.url}}"
+                            },
+                            {
+                                "{{#else}}": "https://pacific-fjord-57420.herokuapp.com"
+                            }
+                        ]
+                    },
+                    "success": {
+                        "type": "$render"
+                    }
+                },
+                "navigate": {
+                    "type": "$href",
+                    "options": {
+                        "url": "http://web.jasonette.com/items/1297/",
+                        "options": {
+                            "url": "{{$jason.url}}"
+                        }
+                    }
+                }
+            },
+            "templates": {
+                "body": {
+                    "background": {
+                        "type": "html",
+                        "url": "{{$get.url}}",
+                        "action": {
+                            "trigger": "navigate"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
