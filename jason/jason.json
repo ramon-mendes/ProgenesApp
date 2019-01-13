@@ -33,7 +33,7 @@
 				"type": "html",
 				"url": "https://pacific-fjord-57420.herokuapp.com/",
 				"action": {
-					"trigger": "handleLink"
+					"trigger": "navigate"
 				}
 			}
 		}
