@@ -1,7 +1,15 @@
 {
 	"$jason": {
 		"head": {
-			"@": "mixin.json"
+			"actions": {
+				"handleLink": {
+					"type": "$util.alert",
+					"options": {
+						"title": "Clicked",
+						"description": "Link {{$jason.url}} clicked!"
+					}
+				}
+			}
 		},
 		"body": {
 			"header": {
