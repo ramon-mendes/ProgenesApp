@@ -1,0 +1,27 @@
+#page-app-login body { background: #333333; }
+
+#page-login
+{
+    color: #BCBCBC;
+    
+    img { margin-bottom: 35px; }
+
+    input
+    {
+        border: none;
+        background: none;
+        border-bottom: solid 1px #BCBCBC;
+        padding: 10px 12px;
+        color: inherit;
+        margin-bottom: 20px;
+    }
+
+    button
+    {
+        margin-top: 40px;
+        padding: 10px;
+        background: #DDDE15;
+        border-radius: 100px;
+        color: white;
+    }
+}

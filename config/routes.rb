@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
-  get 'welcome/hello'
-  root 'welcome#hello'
+  get 'app/login'
+  get 'app/home'
+  root 'app#login'
 end

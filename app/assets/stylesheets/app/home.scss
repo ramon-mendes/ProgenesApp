@@ -1,0 +1,48 @@
+#page-app-home
+{
+    .box-hint
+    {
+        background: #D34F7A;
+        margin-bottom: 20px;
+        svg { opacity: 0.5; }
+    }
+
+    .box-report
+    {
+        align-items: center;
+        height: 143px;
+        background: #DDDE15;
+        margin-bottom: 20px;
+        div { flex-grow: 1; font-size: 28px; font-weight: 600; line-height: 1.3em; }
+    }
+
+    .box-days
+    {
+        display: flex;
+        flex-direction: row;
+        color: white;
+
+        .box
+        {
+            padding-left: 25px;
+            flex-direction: column;
+            flex-grow: 1;
+            .day { color: #606060; text-align: right; font-weight: 400; font-size: 12px; }
+            .percent { font-size: 32px; font-weight: 700; }
+            .txt { font-size: 12px; margin-top: -5px; }
+        }
+
+        .box1
+        {
+            background: #4ED69F;
+            margin-right: 15px;
+        }
+
+        .box2
+        {
+            background: white;
+            border: solid 2px #E8E8E8;
+            color: #4ED69F;
+        }
+    }
+}

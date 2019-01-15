@@ -1,0 +1,52 @@
+$orange: #DDDE15;
+$primary: $orange;
+$input-btn-focus-width: .15rem;
+$input-btn-focus-color: rgba($primary, 1);
+$btn-focus-box-shadow: none;
+$input-bg:	#F4F4F4;
+
+@import "bootstrap";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800");
+
+html
+{
+	height: 100%;
+	font-size: 14px;
+}
+
+body
+{
+	min-height: 100%;
+	font-family: Montserrat, sans-serif;
+	font-weight: 500;
+
+	display: flex;
+	align-items: stretch;
+}
+
+main
+{
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	overflow: hidden;
+	
+	max-width: 375px;
+	padding: 20px;
+
+	& > div { width: 100000px; }// COOL
+}
+
+a:hover { text-decoration: none; }
+
+img { max-width: 100%; }
+
+button { background: none; border: none; }
+
+svg
+{
+	fill: currentColor;
+	width: 16px;
+	height: 16px;
+}

@@ -1,4 +1,19 @@
-*
+body { background: #F7F7FA; }
+
+.content
 {
-    background: red;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.box
+{
+	display: flex;
+	flex-direction: row;
+	color: white;
+	padding: 10px;
+	border-radius: 8px;
+
+	div { padding: 0 6px; }
 }

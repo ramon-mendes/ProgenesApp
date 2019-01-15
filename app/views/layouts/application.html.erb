@@ -1,17 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html id="<%= 'page-' + controller.controller_path + '-' + controller.action_name%>">
 
 <head>
 	<title>Ruby Getting Started on Heroku</title>
+	<meta name="viewport" content="width=device-width">
+	
 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-	<%= stylesheet_link_tag  '//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css' %>
 	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-	<%= javascript_include_tag  '//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js' %>
 	<%= csrf_meta_tags %>
+	<%= svg 'icon-sprites' %>
 </head>
 
 <body>
-	<%= yield %>
+	<main>
+		<div></div>
+		<%= yield %>
+	</main>
 </body>
 
 </html>
