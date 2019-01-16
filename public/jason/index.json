@@ -1,0 +1,27 @@
+{
+	"$jason": {
+		"head": {
+			"title": "Progenes App",
+			"actions": {
+				"navigate": {
+                    "type": "$href",
+                    "options": {
+                        "url": "https://pacific-fjord-57420.herokuapp.com/tabs.json",
+                        "options": {
+                            "url": "{{$jason.url}}"
+                        }
+                    }
+				}
+			}
+		},
+		"body": {
+			"background": {
+				"type": "html",
+				"url": "https://pacific-fjord-57420.herokuapp.com/index.json",
+				"action": {
+					"trigger": "navigate"
+				}
+			}
+		}
+	}
+}
